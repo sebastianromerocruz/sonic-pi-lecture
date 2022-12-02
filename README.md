@@ -8,6 +8,18 @@
 
 ---
 
+### Sections
+
+1. [**Introduction**](#introduction)
+2. [**Playing Notes**](#part-1-playing-notes)
+3. [**Playing Melodies**](#part-2-playing-melodies)
+4. [**Music Synthesis**](#part-3-music-synthesis)
+5. [**Looping (i.e. Playing Things More Than Once)**](#part-4-looping-ie-playing-things-more-than-once)
+6. [**Samples**](#part-5-samples)
+7. [**More Structures and a Sample Tune**](#part-6-more-structures-and-a-sample-tune)
+
+### _Introduction_
+
 Prior to studying computer science, I got my degree in chemical and biomolecular engineering. Now, I certainly don't mean to make this sound like I am ungrateful for the many things that I learned throughout those four years, but I certainly wasn't what you would call "happy". From the very beginning, I wanted to do things that were creative, but my perennial fear of not having a job got the better of me.
 
 Enter computer science. To be honest, the whole reason why I got into this field in the first place was because I knew that not only was the job market a bit better around the New York area, but I was also aware of how many creative things you can accomplish with code. And one of the things that I recently found and have been trying to get into is composing with programming.
