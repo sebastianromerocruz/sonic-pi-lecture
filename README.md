@@ -2,11 +2,9 @@
 
 <h2 align=center><em>By Prof. Sebastián Romero Cruz</em></h2>
 
-### 18 Ventôse Year CCXXX
+### 7 Germinal Year CCXXXI
 
 ***Song of the day***: _[**Healing the Great Fairy**](https://youtu.be/FrPuWk24DT4) by Theophany (2016)._
-
----
 
 ### Sections
 
@@ -30,19 +28,17 @@ Well, it turns out that not only can you make music through programming, but the
 
 So I'm gonna show you one of the most popular ones today: [***Sonic Pi***](https://sonic-pi.net/).
 
----
-
 ### Part 1: _Playing Notes_
 
 Let's start with the basics: playing sounds. This is as easy as follows:
 
-```ruby
+```rb
 play :A6
 ```
 
 This, quite simply, tells Sonic Pi to play an A-6 on a keyboard, using its default keyboard sound. You're not limited to musical notation either. You can also type the number of the note you want to play:
 
-```ruby
+```rb
 play 100
 ```
 
@@ -50,7 +46,7 @@ This means: "play the 100th note on the keyboard" (if it exists, of course). It'
 
 Here's something interesting. What if we wanted to play a chord—i.e. multiple notes at once? In Sonic Pi, we can achieve this in the following way:
 
-```ruby
+```rb
 play :A5
 play :D5
 play :Bb4
@@ -67,7 +63,7 @@ Sonic Pi is a little bit different in this regard. It turns out that, unless tol
 
 So, in other to play melodies, we need to tell Sonic Pi to wait for a specific period of time before performing the next step. Or, in common CS parlance, to **sleep**:
 
-```ruby
+```rb
 play :A5
 sleep 1
 
@@ -82,7 +78,7 @@ play :G4
 
 The number after the `sleep` keyword represents the length of the rest in our arpeggio. In this case, it waits `1` whole beat before playing the next note. You can, of course, change these numbers depending on the result that you're looking for:
 
-```ruby
+```rb
 play :A5
 sleep 0.25
 
@@ -97,7 +93,7 @@ play :G4
 
 That's four notes, played with a quarter rest after each other. Essentially: one measure. You can change the tempo of the track at the top of the file with the `use_bpm` keyword:
 
-```ruby
+```rb
 use_bpm 100
 
 play :A5
@@ -124,7 +120,7 @@ Sonic Pi has a number of different instruments it calls synths (which is short f
 
 Let's try a very video-gamey one, the [**square wave**](https://en.wikipedia.org/wiki/Square_wave):
 
-```ruby
+```rb
 use_bpm 100
 use_synth :square
 
@@ -148,7 +144,7 @@ Nice, right? In early video game music, sound chips were only capable of produci
 
 How did they make them sound so cool, then? They had several tricks, such as [**envelopes**](https://en.wikipedia.org/wiki/Envelope_(music)#ADSR) which, if I were to grossly oversimplify, change the duration of a note. This isn't a music synthesis class, so I won't get too much into it, but the Sonic Pi manual has a really nice [**explanation**](https://sonic-pi.net/tutorial.html#section-2-4) of how to play around with them. For now, I'll show you how using them changes the sound of the notes we currently have:
 
-```ruby
+```rb
 use_bpm 100
 use_synth :square
 
@@ -188,7 +184,7 @@ Thankfully, most music is based around playing the same thing several times, wit
 
 In Sonic Pi, it's as easy as:
 
-```ruby
+```rb
 use_bpm 100
 use_synth :square
 
@@ -213,7 +209,7 @@ In English, you would read this as:
 
 There are multiple kinds of loops in Sonic Pi, but one its most characteristic ones is the `live_loop` which, as the name implies, is meant to be played during live performances. All we need to do is replace the `4.times do` line with something like the following:
 
-```ruby
+```rb
 use_bpm 100
 use_synth :square
 
@@ -242,7 +238,7 @@ With Sonic Pi, we're not limited to just synthetised sounds. In fact, we can als
 For instance, let's a simple beat to our melody:
 
 
-```ruby
+```rb
 use_bpm 100
 use_synth :square
 
@@ -281,7 +277,7 @@ This was, you can continue to build upon your original melody or beat until you 
 
 We could literally have an entire semester of Sonic Pi—it's _that_ expansive, and I myself have only scratched its surface. I'll leave you with this simple arrangement of the [**Fairy Fountain theme**](https://youtu.be/Ql0Dco6Pnfs) from [**The Legend of Zelda**](https://en.wikipedia.org/wiki/The_Legend_of_Zelda) using a couple more Sonic Pi structures such as [**effects**](https://sonic-pi.net/tutorial.html#section-7-2) and [**rings**](https://sonic-pi.net/tutorial.html#section-8-4), and hope that you pick up this super fun technology  yourself. Programming can be dreadfully boring sometimes; these are the things that make it fun.
 
-```ruby
+```rb
 use_bpm 80
 
 # Our main melody
